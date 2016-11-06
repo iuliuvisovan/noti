@@ -13,7 +13,7 @@
     <footer>
         <div class="notification-icon">
             <img src="/img/noti.png" alt="Notifications">
-            <span class="notification-count" data-bind="text: Notifications().length, visible: Notifications().length">0</span>
+            <span class="notification-count updated" data-bind="css: { 'updated': Notifications().length }, text: Notifications().length, visible: Notifications().length" style="display: none">0</span>
         </div>
     </footer>
     <input type="hidden" id="nToken" value="3/4,5,7/645-432-651" />

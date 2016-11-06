@@ -7,13 +7,21 @@ module.exports = {
         clients.push({
             socketId: client.id
         });
+        channel.emit('noti', JSON.stringify([mockNoti]));
+
         client.on('check-in', (token) => λ(client).growzerData = destructure(token));
         client.on('disconnect', () => delete λ(client));
     }) && (channel = io),
-    notify: () => channel.emit('noti', JSON.stringify(mockNoti))
+    notify: () => channel.emit('noti', JSON.stringify(mockNotiList))
 }
 
-var mockNoti = [{
+var mockNoti = {
+    title: "New notification 1",
+    date: new Date(),
+    text: "Hey mate, you just received a new notification!"
+}
+
+var mockNotiList = [{
     title: "New notification 1",
     date: new Date(),
     text: "Hey mate, you just received a new notification!"
