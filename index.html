@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>io.js test</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="io.js test">
+    <meta name="author" content="Iuliu Vișovan">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <footer>
+        <div class="notification-icon">
+            <img src="/img/noti.png" alt="Notifications">
+            <span class="notification-count" data-bind="text: Notifications().length, visible: Notifications().length">0</span>
+        </div>
+    </footer>
+    <input type="hidden" id="nToken" value="3/4,5,7/645-432-651" />
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/socket.io-client/socket.io.js"></script>
+    <script src="/bower_components/knockout/dist/knockout.js"></script>
+    <script src="/js/noti.js"></script>
+</body>
+
+</html>
