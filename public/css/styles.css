@@ -1,31 +1,52 @@
-footer {
-    position: fixed;
-    bottom: 0;
-    height: 60px;
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.notification-count {
-    font-size: 12px;
+.flex-centered div+div {
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+}
+
+.player {
+    background: midnightblue;
     color: white;
-    padding: 2px 10px;
-    background: #ff0948;
-    border-radius: 50px;
-    line-height: 2;
-    font-weight: 500;
-    position: absolute;
-    top: -5px;
-    right: -5px;
-}   
-
-.updated {
- animation-name: new-notification;
-    animation-duration: 1s;
+    padding: 15px;
+    border: 1px solid darkblue;
+    margin: 10px;
 }
 
-@keyframes new-notification {
-    from {
-        padding: 7px 16px;
-        top: -15px;
-        right: -15px;
-    }
+.player-progress {
+    border: 1px solid black;
+    height: 100px;
+    padding: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.player-progress .progress {
+    height: 100%;
+    background: darkslateblue;
+}
+
+.player-progress.my-progress {
+    height: 150px;
+}
+
+.player-progress.my-progress .progress {
+    background: darkslateblue;
+}
+
+.player-progress-name {
+    display: block;
+    position: absolute;
+    color: white;
+    margin: 0 15px;
 }
