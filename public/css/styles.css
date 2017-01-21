@@ -23,7 +23,7 @@ input {
 
 .player-progress {
     border: 1px solid black;
-    height: 100px;
+    height: 50px;
     padding: 3px;
     position: relative;
     display: flex;
@@ -37,7 +37,7 @@ input {
 }
 
 .player-progress.my-progress {
-    height: 150px;
+    height: 100px;
 }
 
 .player-progress.my-progress .progress {
@@ -47,6 +47,10 @@ input {
 .player-progress-name {
     display: block;
     position: absolute;
-    color: white;
+    color: lightslategray;
     margin: 0 15px;
+}
+
+.question-image {
+    max-height: 250px; 
 }

@@ -28,7 +28,8 @@
             <h1>Ready?</h3>
         </div>
         <div data-bind="visible: !Loading()" style="text-align: center">
-            <h1>What is <span data-bind="text: CurrentQuestion"></span>?</h3>
+            <h1>What is this?</h3>
+            <img class="question-image" data-bind="attr: { src: CurrentQuestion }"/><br/>
             <input style="margin-bottom: 30px" onkeydown="event.keyCode == 13 && manager.Answer()" data-bind="textInput: CurrentAnswer"/>
             <div class="progress-area">
                 <div class="player-progress my-progress">
